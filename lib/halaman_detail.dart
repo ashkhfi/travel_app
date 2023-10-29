@@ -133,6 +133,7 @@ class _HalamanDetailState extends State<HalamanDetail> {
             top: MediaQuery.sizeOf(context).height / 25,
             left: 15,
             child: FloatingActionButton(
+              heroTag: 'fab_2',
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -145,6 +146,7 @@ class _HalamanDetailState extends State<HalamanDetail> {
             top: MediaQuery.sizeOf(context).height / 25,
             right: 15,
             child: FloatingActionButton(
+              heroTag: 'fab_1',
               onPressed: () {
                 setState(() {
                widget.tempat.liked = !widget.tempat.liked;
